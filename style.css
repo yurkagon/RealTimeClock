@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.page{
+	background: url('icons/wall_texture.jpg') no-repeat -25px -50px;
+	
+	position:fixed ;
+    top:0;
+    width:100%;
+    z-index:0;
+    height:100%;
+    background-size: calc(100% + 50px);
+}
+
+#clock{
+	width: 560px;/* 700 */
+	height: 560px;/* 700 */
+	border: 5px solid  rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+	margin: 50px auto;
+	position: relative; 
+	
+	background: url('icons/clock_texture.jpg') no-repeat;
+	background-size: cover;
+	box-shadow: 1.5em 1em 0.8em rgba(48,48,48,0.3);
+}
+
+.strelka{
+	width: 240px; /* 300 */
+	height: 560px;/* 700 */
+	display: block;
+	position: absolute;
+	left: 160px;/* 200 */
+	top: 0px;/* 0 */
+	
+	/* bad perfomance */
+	-webkit-filter: drop-shadow(7px 7px rgba(48,48,48,0.3));
+	
+}
+
