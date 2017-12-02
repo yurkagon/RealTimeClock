@@ -11,8 +11,10 @@ $(document).ready(function() {
 		var date = new Date();
 
 		var secDeg = (date.getSeconds()/60)*360;
-		var minDeg = (date.getMinutes()/60)*360;
-		var hourDeg = (date.getHours()/12)*360;
+		var minDeg = (date.getMinutes()/60)*360;		
+		var hourDeg = ((date.getHours()*60+date.getMinutes())/720)*360;
+        //var hourDeg = (date.getHours()/12)*360; //old
+
 
 		$('#sec').css('transform', 'rotate(' + secDeg + 'deg)');
 		$('#min').css('transform', 'rotate(' + minDeg + 'deg)');
